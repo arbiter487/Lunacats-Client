@@ -26,7 +26,6 @@ int main() {
             cout<<axes[i]<< " ";
         }
         cout<<endl;
-
         
         usleep(500000);
     }
