@@ -4,7 +4,7 @@
 
 using namespace std;
 
-
+//test comment
 
 int main() {
 
@@ -30,7 +30,5 @@ int main() {
         usleep(500000);
     }
 #pragma clang diagnostic pop
-
-
 }
 
