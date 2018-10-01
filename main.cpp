@@ -27,6 +27,7 @@ int main() {
         }
         cout<<endl;
 
+        
         usleep(500000);
     }
 #pragma clang diagnostic pop
