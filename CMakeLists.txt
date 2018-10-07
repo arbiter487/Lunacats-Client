@@ -11,14 +11,14 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 add_subdirectory(${PROJECT_SOURCE_DIR}/deps/glfw-3.2.1)
 include_directories(${PROJECT_SOURCE_DIR}/deps/glfw-3.2.1/include)
 
-#All source files should be included here - Lunacats Dev
-set(SOURCE_FILES main.cpp joystickInput.cpp)
 
 
 
+add_executable(Client ClientMain.cpp)
+add_executable(Outreach OutreachMain.cpp)
+add_executable(Server ServerMain.cpp)
 
-
-add_executable(Client main.cpp)
 
 
 target_link_libraries(Client glfw ${GLFW_LIBRARIES})
+target_link_libraries(Outreach glfw ${GLFW_LIBRARIES})

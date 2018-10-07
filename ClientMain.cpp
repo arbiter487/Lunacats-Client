@@ -1,9 +1,11 @@
 //
-// This is the main class for the Client and as of now it's main task is to send the controller input to the arduino
+// This is the main class for the Client and as of now it's main task is to send the controller input to the raspberry pie
+//
 #include <iostream>
 #include <unistd.h>
 #include <GLFW/glfw3.h>
 #include "joystickInput.cpp"
+#include "Transmit.cpp"
 
 using namespace std;
 
@@ -24,13 +26,15 @@ int main() {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wmissing-noreturn"
     while(true) {
-        processInput();
 
+        processInput();
+        sendMessage(5);
 
         //sleeps for some number of nanoseconds (1000 nanoseconds = 1 millisecond)
         usleep(100000);
     }
+
 //Also used for removing error message
 #pragma clang diagnostic pop
-}
 
+}
