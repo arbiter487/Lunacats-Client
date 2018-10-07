@@ -3,7 +3,7 @@
 // The primary purpose of this function is to detect controller input and send it to the main class
 #include <iostream>
 #include <GLFW/glfw3.h>
-
+#include "DataInterface.cpp"
 
 using namespace std;
 
